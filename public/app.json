@@ -1,0 +1,34 @@
+{
+    "startup_app": {
+        "name": "launch-app-asset",
+        "url": "http://localhost:5555/index.html",
+        "uuid": "launch-app-asset",
+        "applicationIcon": "http://localhost:5555/favicon.ico",
+        "autoShow": true,
+        "saveWindowState": true,
+        "permissions": {
+            "System": {
+                "launchExternalProcess": true,
+                "terminateExternalProcess": true,
+                "downloadAsset": true
+            }
+        }
+    },
+    "appAssets": [{
+        "src": "https://developer.openfin.co/release/chromium/x64/87.0.4280.47.zip",
+        "version": "87.0.4280.47",
+        "alias": "chromium-87",
+        "target": "87.0.4280.47/chromium-87.0.4280.47/chrome.exe",
+        "mandatory": true
+    }],
+    "runtime": {
+        "arguments": "--remote-debugging-port=9090",
+        "version": "18.87.57.42"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Launch App Asset",
+        "icon": "http://localhost:5555/favicon.ico",
+        "name": "Launch App Asset"
+    }
+}
