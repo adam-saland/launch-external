@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Note: because the app asset version for the alias is known, we only have to supply any sub-directories here, and the executable name. 
     fin.System.launchExternalProcess({
-        alias: 'chromium-87', target: 'chromium-87.0.4280.27\\chrome.exe', 
+        alias: 'chromium-87', 
+        target: 'chromium-87.0.4280.27\\chrome.exe', 
         arguments: '"https://github.com"', 
         listener: async (result) => {
             console.log('result', result);
